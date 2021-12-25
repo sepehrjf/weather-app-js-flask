@@ -1,4 +1,4 @@
-# Weather Web Application
+# A Weather Web App
 A JavaScript weather web application with a backend of Flask hosted on Google Cloud App Engine.
 
 Click **[HERE](https://csci571-homework-6-326316.wl.r.appspot.com/)** to view it live.
