@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+body {
+  background-color: #e6e6e6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search-card {
+  width: 500px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: white;
+  box-shadow: 0px 2.5px 5px lightgray, -5px 2.5px 7.5px lightgray,
+    5px 2.5px 7.5px lightgray;
+}
+
+.search-header {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 17.5px;
+  padding-bottom: 12.5px;
+  background-size: 150%;
+  background-image: url("banner.jpg");
+  color: #535353;
+}
+
+.header {
+  padding-bottom: 10px;
+  padding-top: 7.5px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.sub-header {
+  font-size: 15px;
+}
+
+.form {
+  margin: 17.5px 32.5px;
+}
+
+label {
+  color: #4a6599;
+  font-size: 13px;
+  padding-bottom: 100px;
+}
+
+sup {
+  color: red;
+  font-size: x-small;
+}
+
+.street {
+  padding-bottom: 10px;
+}
+
+#street {
+  display: block;
+  height: 22.5px;
+  border: lightgray solid 1px;
+  width: 100%;
+}
+
+#street:focus {
+  outline: none;
+  border: black solid 1px;
+}
+
+#street:disabled {
+  background-color: #f5f5f7;
+}
+
+#city {
+  display: block;
+  height: 22.5px;
+  border: lightgray solid 1px;
+}
+
+#city:focus {
+  outline: none;
+  border: black solid 1px;
+}
+
+#city:disabled {
+  background-color: #f5f5f7;
+}
+
+.state {
+  display: inline-block;
+  margin-left: 55px;
+}
+
+#state {
+  display: block;
+  height: 27.5px;
+  width: 235px;
+  border: lightgray solid 1px;
+  background-color: white;
+}
+
+#state:focus {
+  outline: none;
+  border: black solid 1px;
+}
+
+.city-state {
+  display: flex;
+}
+
+#submit {
+  width: 90px;
+  height: 45px;
+  border-radius: 0;
+  border: 0;
+  background: linear-gradient(#4a6599 90%, #334b78 10%);
+  color: white;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+#submit:hover {
+  filter: brightness(120%);
+}
+
+#submit:active {
+  border: black solid 1px;
+}
+
+#clear {
+  width: 90px;
+  height: 45px;
+  border-radius: 0;
+  border: 0;
+  background: linear-gradient(#ffb80e 90%, #ff8200 10%);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: medium;
+}
+
+#clear:hover {
+  filter: brightness(90%);
+}
+
+#clear:active {
+  border: black solid 1px;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+}
+
+.line {
+  color: #4a6599;
+}
+
+.auto-detect {
+  padding: 10px 0px;
+}
+
+#auto-detect-text {
+  font-size: normal;
+  font-size: 15px;
+}
+
+.display-none {
+  display: none;
+}
+
+#today-card {
+  background-color: white;
+  width: 600px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 15px 25px;
+  color: #868686;
+  box-shadow: 0px 2.5px 5px lightgray, -5px 2.5px 7.5px lightgray,
+    5px 2.5px 7.5px lightgray;
+}
+
+#today-card:hover {
+  box-shadow: 0px 7.5px 10px lightgray, -10px 7.5px 12.5px lightgray,
+    10px 7.5px 12.5px lightgray;
+}
+
+.today-card-header {
+  display: flex;
+}
+
+#today-card-location {
+  font-size: x-large;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#today-card-code-image {
+  margin-right: 150px;
+}
+
+#today-card-code-image-img {
+  width: 120px;
+  height: 120px;
+}
+
+#today-card-code {
+  margin-left: 15px;
+}
+
+.today-card-details {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.today-card-details-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#today-card-temp {
+  font-size: 90px;
+  font-weight: 300;
+}
+
+.today-card-humidity,
+.today-card-pressure,
+.today-card-wind-speed,
+.today-card-visibility,
+.today-card-cloud-cover,
+.today-card-uv-index {
+  padding: 15px 5px;
+  display: block;
+  margin: 0 12.5px;
+  font-size: small;
+}
+
+#today-card-humidity-image,
+#today-card-pressure-image,
+#today-card-wind-speed-image,
+#today-card-visibility-image,
+#today-card-cloud-cover-image,
+#today-card-uv-index-image {
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12.5px 0px;
+}
+
+#today-card-humidity,
+#today-card-pressure,
+#today-card-wind-speed,
+#today-card-visibility,
+#today-card-cloud-cover,
+#today-card-uv-index {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+  font-size: medium;
+  font-weight: 400;
+}
+
+thead {
+  background-color: #4a6599;
+}
+
+th {
+  font-size: medium;
+  font-weight: 400;
+  padding: 7.5px 65px;
+}
+
+td {
+  vertical-align: middle;
+  background-color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#td-img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.second-result-headers {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  font-weight: 300;
+}
+
+#detailed-card {
+  background: linear-gradient(white, #39517a);
+  width: 500px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 2.5px 5px lightgray, -5px 2.5px 7.5px lightgray,
+    5px 2.5px 7.5px lightgray;
+}
+
+#detailed-card:hover {
+  box-shadow: 0px 7.5px 10px lightgray, -10px 7.5px 12.5px lightgray,
+    10px 7.5px 12.5px lightgray;
+}
+
+.detailed-card-header {
+  padding: 15px 25px;
+}
+
+.detailed-card-header-container {
+  display: flex;
+}
+
+#detailed-card-header-left {
+  color: #384e78;
+  font-size: larger;
+}
+
+#detailed-card-header-right {
+  padding-left: 125px;
+  /* display: flex;
+  align-content: flex-end; */
+}
+
+#detailed-card-image {
+  width: 125px;
+  height: 125px;
+}
+
+#detailed-card-content {
+  color: white;
+  display: flex;
+  margin-left: 175px;
+  margin-top: 10px;
+}
+
+#detailed-card-content-keys {
+  padding-right: 5px;
+}
+
+.detailed-card-content-key {
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+.detailed-card-content-value {
+  padding-bottom: 5px;
+}
+
+.detailed-card-header-left-content {
+  margin-bottom: 12.5px;
+}
+
+#detailed-card-temps {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}
+
+.arrow {
+  width: 40px;
+  position: relative;
+  left: calc(50% - 40px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#arrown-down-img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
